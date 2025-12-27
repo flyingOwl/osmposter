@@ -1,0 +1,56 @@
+{
+    "label": "Bornholm",
+    "relation": 5176019,
+
+    "osmfile": "data/denmark-latest.osm.pbf",
+
+    "output": {
+        "w_mm": 300,
+        "h_mm": 300,
+        "dpi": 300
+    },
+
+    "boundary_extension": {
+        "north": 0.15,
+        "east": 0.15,
+        "south": 0.15,
+        "west": 0.15
+    },
+
+    "draw": {
+        "baseline_mm": 0.1,
+        "layer": {
+            "boundary": {
+                "type": "boundary",
+                "options": {
+                    "ids": [5176019],
+                    "color": [ 0.95, 0.92, 0.82 ]
+                }
+            },
+            "streets": {
+                "type": "streets",
+                "options": {
+                    "color": [ 0.74, 0.2, 0.2]
+                }
+            },
+            "runways": {
+                "type": "aeroways",
+                "options": {
+                    "color": [ 0.74, 0.2, 0.2]
+                }
+            },
+            "water": {
+                "type": "water",
+                "options": {
+                    "color": [ 0.08, 0.35, 0.50]
+                }
+            },
+            "buildings": {
+                "type": "buildings",
+                "options": {
+                    "color": [ 0.3, 0.3, 0.3]
+                }
+            }
+        }
+    }
+}

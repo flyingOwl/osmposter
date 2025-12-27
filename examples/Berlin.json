@@ -1,0 +1,105 @@
+{
+    "label": "Berlin",
+    "relation": 62422,
+
+    "osmfile": "data/brandenburg-latest.osm.pbf",
+
+    "output": {
+        "w_mm": 700,
+        "h_mm": 500,
+        "dpi": 300
+    },
+
+    "boundary_extension": {
+        "north": 0.2,
+        "east": 0.2,
+        "south": 0.2,
+        "west": 0.2
+    },
+
+    "draw": {
+        "baseline_mm": 0.07,
+        "layer": {
+            "boundary": {
+                "type": "boundary",
+                "options": {
+                    "ids": [62422]
+                }
+            },
+            "streets": {
+                "type": "streets"
+            },
+            "railways": {
+                "type": "railways"
+            },
+            "runways": {
+                "type": "aeroways",
+                "options": {
+                    "include_abandoned": true
+                }
+            },
+            "water": {
+                "type": "water"
+            },
+            "bus": {
+                "type": "routes",
+                "options": {
+                    "color": [ 0.656, 0.00, 0.494],
+                    "width": 2,
+                    "tags": {
+                        "route": "bus",
+                        "network:short": "VBB"
+                    }
+                }
+            },
+            "tram": {
+                "type": "routes",
+                "options": {
+                    "color": [ 0.851, 0.102, 0.102],
+                    "width": 4,
+                    "tags": {
+                        "route": "tram"
+                    },
+                    "ways": {
+                        "width": 2,
+                        "tags": {
+                            "railway": "tram"
+                        }
+                    }
+                }
+            },
+            "ubahn": {
+                "type": "routes",
+                "options": {
+                    "color": [ 0.000, 0.300, 0.550],
+                    "width": 8,
+                    "tags": {
+                        "route": "subway"
+                    },
+                    "ways": {
+                        "width": 3,
+                        "tags": {
+                            "railway": "subway"
+                        }
+                    }
+                }
+            },
+            "sbahn": {
+                "type": "routes",
+                "options": {
+                    "color": [ 0.000, 0.557, 0.306],
+                    "width": 8,
+                    "tags": {
+                        "route": "light_rail"
+                    },
+                    "ways": {
+                        "width": 3,
+                        "tags": {
+                            "railway": "light_rail"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

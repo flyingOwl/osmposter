@@ -1,0 +1,102 @@
+{
+    "label": "Tokyo",
+    "relation": 19631009,
+
+    "osmfile": "data/kanto-latest.osm.pbf",
+
+    "output": {
+        "w_mm": 400,
+        "h_mm": 400,
+        "dpi": 300
+    },
+
+    "boundary_extension": {
+        "north": 0.3,
+        "east": 0.3,
+        "south": 0.1,
+        "west": 0.3
+    },
+
+    "draw": {
+        "baseline_mm": 0.07,
+        "layer": {
+            "boundary": {
+                "type": "boundary",
+                "options": {
+                    "ids": [19631009],
+                    "color": [0.91, 0.91, 0.91]
+                }
+            },
+            "runways": {
+                "type": "aeroways",
+                "options":{
+                    "color": [0.60, 0.13, 0.64]
+                }
+            },
+            "water": {
+                "type": "water",
+                "options":{
+                    "color": [0.20, 0.20, 0.20]
+                }
+            },
+            "bus": {
+                "type": "routes",
+                "options": {
+                    "color": [ 0.15, 0.30, 0.77],
+                    "width": 2,
+                    "tags": {
+                        "route": "bus"
+                    }
+                }
+            },
+            "tram": {
+                "type": "routes",
+                "options": {
+                    "color": [ 0.30, 0.70, 0.20],
+                    "width": 4,
+                    "tags": {
+                        "route": "tram"
+                    },
+                    "ways": {
+                        "width": 2,
+                        "tags": {
+                            "railway": "tram"
+                        }
+                    }
+                }
+            },
+            "subway": {
+                "type": "routes",
+                "options": {
+                    "color": [ 0.84, 0.24, 0.24],
+                    "width": 8,
+                    "tags": {
+                        "route": "subway"
+                    },
+                    "ways": {
+                        "width": 3,
+                        "tags": {
+                            "railway": "subway"
+                        }
+                    }
+                }
+            },
+            "lightrail": {
+                "type": "routes",
+                "options": {
+                    "color": [ 0.00, 0.55, 0.30],
+                    "width": 8,
+                    "tags": {
+                        "route": "light_rail"
+                    },
+                    "ways": {
+                        "width": 3,
+                        "tags": {
+                            "railway": "light_rail"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
